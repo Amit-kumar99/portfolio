@@ -34,12 +34,14 @@ const Projects = () => {
   });
 
   return (
-    <div className="mt-10 w-4/12 mx-auto ">
+    <div className="mt-16 w-4/12 mx-auto ">
       <h2 className="font-bold text-4xl text-center">Projects</h2>
       {/* carousel */}
       <div className="flex mt-10">
         <div className="flex">
-          <button className="border border-black mr-5" onClick={handlePreviousClick}>L</button>
+          <button className="border border-black mr-5 p-3" onClick={handlePreviousClick}>
+            <i className="fa-solid fa-less-than"></i>
+          </button>
           <div className="mr-20">
             <img src="" alt="project-image"/>
           </div>
@@ -53,7 +55,9 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <button className="border border-black ml-5" onClick={handleNextClick}>R</button>
+          <button className="border border-black ml-5 p-3" onClick={handleNextClick}>
+            <i className="fa-solid fa-greater-than"></i>
+          </button>
         </div>
       </div>
     </div>
