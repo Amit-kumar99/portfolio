@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import project1_img from "../images/project1_ss.png"
-import project2_img from "../images/project2_ss.png"
+import project1_img from "../images/project1_ss.png";
+import project2_img from "../images/project2_ss.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,7 +13,7 @@ const Projects = () => {
       description: "A food delivery application",
       tech_stack: "Html, Tailwind CSS, React",
       img: project1_img,
-      code: ""
+      code: "https://github.com/Amit-kumar99/swiggy-clone"
     },
     {
       id: 2,
@@ -38,16 +39,14 @@ const Projects = () => {
   });
 
   return (
-    <div className="mt-16 w-8/12 mx-auto">
+    <div className="mt-16 w-6/12 mx-auto">
       <h2 className="font-bold text-5xl text-center">Projects</h2>
-      {/* carousel */}
-      <div className="flex mt-10 mx-auto">
-        <div className="flex">
-          <button className="border border-black mr-16 p-3" onClick={handlePreviousClick}>
-            <i className="fa-solid fa-less-than"></i>
+        <div className="flex mt-16 mx-auto">
+          <button className=" mr-16 p-3" onClick={handlePreviousClick}>
+            <i className="fa-solid fa-less-than fa-2xl" style={{"color": "#311f51"}}></i>
           </button>
           <div className="mr-20">
-            <img className="w-56 h-40" src={projects[activeIndex].img} alt="project-image"/>
+            <img className="w-60 h-48" src={projects[activeIndex].img} alt="project-image"/>
           </div>
           <div>
             <div>
@@ -55,16 +54,21 @@ const Projects = () => {
               <p>{projects[activeIndex].description}</p>
               <p>TECH STACK: <span className="font-semibold">{projects[activeIndex].tech_stack}</span></p>
               <div className="flex mt-2">
-                <button className="border rounded-md p-3 my-2 mr-2 bg-violet-500 text-white">Live Link</button>
-                <button className="border rounded-md p-3 my-2 mr-2 bg-violet-500 text-white">Github: Source Code</button>
+                <Link 
+                  className="border rounded-md p-3 my-2 mr-2 bg-violet-500 text-white"
+                  to="">Live Demo
+                </Link>
+                <Link 
+                  className="border rounded-md p-3 my-2 mr-2 bg-violet-500 text-white text-sm"
+                  to={projects[activeIndex].code}>Source Code 
+                </Link>
               </div>
             </div>
           </div>
-          <button className="border border-black ml-16 p-3" onClick={handleNextClick}>
-            <i className="fa-solid fa-greater-than"></i>
+          <button className="ml-16 p-3" onClick={handleNextClick}>
+            <i className="fa-solid fa-greater-than fa-2xl"></i>
           </button>
         </div>
-      </div>
     </div>
   )
 }

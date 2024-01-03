@@ -1,19 +1,11 @@
 import profile_pic from "../images/profile_pic.jpg";
+import Sidebar from "./Sidebar";
 
 const Home = () => {
   return (
     <div className="w-8/12 flex mx-auto mt-32">
       <div className="my-auto">
-        <div>
-          <a href="https://github.com/Amit-kumar99?tab=repositories">
-            <i className="fa-brands fa-github fa-2xl"/>
-          </a>
-        </div>
-        <div className="mt-7">
-          <a href="https://www.linkedin.com/in/amit-kumar-431a01235/">
-            <i className="fa-brands fa-linkedin fa-2xl"/>
-          </a>
-        </div>
+        <Sidebar/>
       </div>
       <div className="ml-32 mt-10">
         <h2 className="font-semibold text-4xl mb-2">Hi, I'm <p className="font-bold">Amit Kumar</p></h2>
