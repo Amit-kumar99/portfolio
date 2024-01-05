@@ -39,14 +39,14 @@ const Projects = () => {
   });
 
   return (
-    <div className="mt-16 w-6/12 mx-auto">
+    <div className="mt-8 w-9/12 mx-auto">
       <h2 className="font-bold text-5xl text-center">Projects</h2>
         <div className="flex mt-16 mx-auto">
           <button className=" mr-16 p-3" onClick={handlePreviousClick}>
             <i className="fa-solid fa-less-than fa-2xl" style={{"color": "#311f51"}}></i>
           </button>
           <div className="mr-20">
-            <img className="w-60 h-48" src={projects[activeIndex].img} alt="project-image"/>
+            <img className="w-[700px] h-[400px]" src={projects[activeIndex].img} alt="project-image"/>
           </div>
           <div>
             <div>
