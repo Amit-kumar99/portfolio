@@ -39,9 +39,9 @@ const Projects = () => {
   });
 
   return (
-    <div className="mt-8 w-9/12 mx-auto">
+    <div className="mt-5 w-9/12 mx-auto">
       <h2 className="font-bold text-5xl text-center">Projects</h2>
-        <div className="flex mt-16 mx-auto">
+        <div className="flex mt-10 mx-auto">
           <button className=" mr-16 p-3" onClick={handlePreviousClick}>
             <i className="fa-solid fa-less-than fa-2xl" style={{"color": "#311f51"}}></i>
           </button>
@@ -73,4 +73,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

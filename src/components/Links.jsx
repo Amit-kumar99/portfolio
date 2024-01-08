@@ -1,7 +1,7 @@
 import { Link }from "react-router-dom";
 import { useState } from "react";
 
-const Links = ({isLinkActive, setIsLinkActive}) => {
+const Links = () => {
     const [isLinkActive1, setIsLinkActive1] = useState(false);
     const [isLinkActive2, setIsLinkActive2] = useState(false);
     const [isLinkActive3, setIsLinkActive3] = useState(false);

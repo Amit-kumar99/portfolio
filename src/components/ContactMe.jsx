@@ -1,8 +1,8 @@
 const ContactMe = () => {
   return (
-    <div className="mt-16 mx-auto w-4/12">
-        <h2 className="font-bold text-5xl mb-10 text-center">Contact Me</h2>
-        <form>
+    <div className="mt-5 mx-auto w-4/12">
+        <h2 className="font-bold text-5xl text-center">Contact Me</h2>
+        <form className="mt-10">
             <div>
                 <input className="border-2 p-2 mb-3 w-full" type="text" placeholder="Your name"/>
             </div>
@@ -20,4 +20,4 @@ const ContactMe = () => {
   )
 }
 
-export default ContactMe
+export default ContactMe;
