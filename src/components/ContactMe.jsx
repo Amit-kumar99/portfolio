@@ -1,6 +1,6 @@
 const ContactMe = () => {
   return (
-    <div className="mt-5 mx-auto w-4/12">
+    <div className="mt-10 mx-auto w-4/12">
         <h2 className="font-bold text-5xl text-center">Contact Me</h2>
         <form className="mt-10">
             <div>

@@ -1,12 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from "./components/Home"
-import Resume from "./components/Resume"
-import Projects from "./components/Projects"
-import ContactMe from './components/ContactMe'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import ContactMe from './components/ContactMe';
 
 export const appRouter = createBrowserRouter([
   {
@@ -18,10 +17,6 @@ export const appRouter = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: "/about",
-        element: <Resume/>
-      },
-      {
         path: "/projects",
         element: <Projects/>
       },
@@ -31,9 +26,9 @@ export const appRouter = createBrowserRouter([
       }
     ]
   }
-])
+]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={appRouter}>
     <React.StrictMode>
       <App />
