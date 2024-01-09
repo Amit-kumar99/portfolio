@@ -4,7 +4,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="pt-6 bg-green-100 font-semibold shadow-md">
+      <nav className="p-10 bg-green-100 font-semibold shadow-md">
         <Links/>
       </nav>
     </div>
