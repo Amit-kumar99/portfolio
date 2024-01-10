@@ -10,7 +10,7 @@ const ContactMe = () => {
                 <input className="border-2 p-2 mb-3 w-full" type="email" placeholder="Your email"/>
             </div>
             <div>
-                <textarea className="border-2 my-3  w-full" rows="5" cols="50" placeholder="Your message"></textarea>
+                <textarea className="border-2 my-3 pl-2 pt-1 w-full" rows="5" cols="50" placeholder="Your message"></textarea>
             </div>
             <div>
                 <button className="border-2 bg-violet-500 text-white p-3 my-3 rounded-md">Send message</button>

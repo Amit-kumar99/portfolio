@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <div>
+    <div className="my-auto">
         <div>
           <a href="https://github.com/Amit-kumar99?tab=repositories">
             <i className="fa-brands fa-github fa-2xl"/>
