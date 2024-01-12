@@ -14,6 +14,9 @@ const Skills = () => {
         <li className="pt-3 px-2 bg-gray-100 mr-2 rounded-full shadow-lg">
             <i className="fa-brands fa-react fa-2xl" style={{color: "#0eb7e1"}}/>
         </li>
+        <li className="p-2 bg-gray-100 mr-2 rounded-full shadow-lg">
+            <img className="w-8" src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="redux-logo"/>
+        </li>
         <li className="pt-4 bg-gray-100 px-2 mr-2 rounded-full shadow-lg">
             <img className="w-8" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" alt="tailwind-logo"/>
         </li>
