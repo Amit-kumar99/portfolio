@@ -2,14 +2,15 @@ import resume from "../images/Resume.pdf";
 
 const DownloadResumeBtn = () => {
   return (
-    <div className="mt-7 mr-2">
-        <a href={resume} download="Amit Kumar's Resume">
-          <button 
-            className="border rounded-md p-3 bg-green-500 text-white"
-            onClick={() => {}}>Download Resume
-          </button>
-        </a>
-    </div>
+    <a href={resume} download="Amit Kumar's Resume">
+      <div className="flex rounded-sm p-3 bg-green-500">
+        <button 
+          className="text-white pr-2"
+          onClick={() => {}}>Download Resume
+        </button>
+        <i className="fa-solid fa-download pt-1" style={{color: "#f0f4f3"}}/>
+      </div>
+    </a>
   )
 }
 

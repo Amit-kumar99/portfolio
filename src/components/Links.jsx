@@ -32,14 +32,6 @@ const Links = () => {
                     >
                         Projects
                 </Link>
-                <Link 
-                    className={"mx-5 text-" + (isLinkActive3 ? "black" : "gray") + "-600"} 
-                    to="/contact"
-                    onMouseOver={() => setIsLinkActive3(true)}
-                    onMouseOut={() => setIsLinkActive3(false)}
-                    >
-                        Contact
-                </Link>
             </div>
         </div>
     )

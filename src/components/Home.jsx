@@ -3,6 +3,7 @@ import Skills from "./Skills";
 import Description from "./Description";
 import DownloadResumeBtn from "./DownloadResumeBtn";
 import ProfileImage from "./ProfileImage";
+import ContactMe from "./ContactMe";
 
 const Home = () => {
   return (
@@ -11,7 +12,10 @@ const Home = () => {
       <div className="ml-32 mt-10">
         <Description/>
         <Skills/>
-        <DownloadResumeBtn/>
+        <div className="flex mt-7">
+          <DownloadResumeBtn/>
+          <ContactMe/>
+        </div>
       </div>
       <ProfileImage/>
     </div>
