@@ -1,7 +1,12 @@
 const Skills = () => {
   return (
     <ul className="flex mt-5">
-        
+        <li className="pt-3 bg-gray-100 px-2 mr-2 rounded-full shadow-lg">
+            <img className="w-10" src="https://seeklogo.com/images/P/parcel-logo-2AED80E697-seeklogo.com.png" alt="vite-logo"/>
+        </li>
+        <li className="pt-3 bg-gray-100 px-2 mr-2 rounded-full shadow-lg">
+            <img className="w-8" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg" alt="vite-logo"/>
+        </li>
         <li className="p-3 bg-gray-100 mr-2 rounded-full shadow-lg" data-tooltip-target="tooltip-1">
             <i className="fa-brands fa-html5 fa-2xl" style={{color: "#eb460f"}}/>
         </li>

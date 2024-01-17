@@ -14,7 +14,7 @@ const Home = () => {
         <Skills/>
         <div className="flex mt-7">
           <DownloadResumeBtn/>
-          <ContactMe/>
+          <ContactMe label="Message me" mailto="mailto:amit.kumar.16208932@gmail.com" />
         </div>
       </div>
       <ProfileImage/>
