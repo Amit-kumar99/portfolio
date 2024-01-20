@@ -18,7 +18,6 @@ export const projects = [
       heading: "Youtube Clone",
       // tech_stack: "Html, Tailwind CSS, React",
       img: [project2_img1, project2_img2],
-      concepts: "debouncing in search bar, live chat using long polling, n level nesting in comments",
       code: "https://github.com/Amit-kumar99/youtube-clone"
     },
     {

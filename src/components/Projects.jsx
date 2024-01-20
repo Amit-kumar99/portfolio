@@ -17,13 +17,16 @@ const Projects = () => {
   });
 
   return (
-    <div className="dark:bg-gray-400 h-[575px]">
-      <div className="pt-6 w-11/12 mx-auto">
-        <h2 className="font-bold text-4xl ml-3">Projects</h2>
-        <div className="flex">
+    <div className="dark:bg-black h-[643px]">
+      <div className="pt-16 w-11/12 mx-auto">
+        <h2 
+          className={"font-bold text-4xl ml-3 dark:text-white"}>
+            Projects
+        </h2>
+        <div className="flex mt-10">
           {projects.map((project) => (
-            <div key={project.id} className="flex w-[440px] mt-7 mx-auto">
-              <div className="border">
+            <div key={project.id} className="flex w-[440px] mx-auto bg-white pb-2">
+              <div>
                 <div className="flex">
                   <div>
                     <img className="w-[440px] h-[300px]" src={project.img[activeIndex]} alt="project-image"/>
@@ -33,14 +36,13 @@ const Projects = () => {
                   <div>
                     <h3 className="font-semibold text-2xl mb-2">{project.heading}</h3>
                     {/* <p className="font-semibold">{project.tech_stack}</p> */}
-                    <p className="font-semibold">{project.concepts}</p>
                     <div className="flex mt-2">
                       <Link 
-                        className="border rounded-sm px-3 py-2 my-1 mr-2 bg-violet-500 text-white"
+                        className="rounded-sm px-3 py-2 my-1 mr-2 bg-violet-500 text-white"
                         to="">Live Demo
                       </Link>
                       <Link 
-                        className="border rounded-sm px-3 py-2 my-1 bg-violet-500 text-white"
+                        className="rounded-sm px-3 py-2 my-1 bg-violet-500 text-white"
                         to={project.code}>Source Code 
                       </Link>
                     </div>

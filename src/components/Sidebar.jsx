@@ -3,12 +3,12 @@ const Sidebar = () => {
     <div className="my-auto">
         <div>
           <a href="https://github.com/Amit-kumar99?tab=repositories">
-            <i className="fa-brands fa-github fa-2xl"/>
+            <i className="fa-brands fa-github fa-2xl" style={{color: "#6f42f5"}}/>
           </a>
         </div>
         <div className="mt-7">
           <a href="https://www.linkedin.com/in/amit-kumar-431a01235/">
-            <i className="fa-brands fa-linkedin fa-2xl"/>
+            <i className="fa-brands fa-linkedin fa-2xl"  style={{color: "#6f42f5"}}/>
           </a>
         </div>
     </div>

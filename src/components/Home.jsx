@@ -7,7 +7,7 @@ import ContactMe from "./ContactMe";
 
 const Home = () => {
   return (
-    <div className="dark:bg-slate-400 h-[575px]">
+    <div className="dark:bg-black h-[643px]">
       <div className="w-8/12 flex mx-auto pt-24">
         <Sidebar/>
         <div className="ml-32 mt-10">

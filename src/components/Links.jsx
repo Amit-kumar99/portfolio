@@ -15,12 +15,12 @@ const Links = ({darkMode, setDarkMode}) => {
                 <Link
                     className={"text-black-600"} 
                     to="/" >
-                    <h2 className="text-2xl ml-10">Amit Kumar</h2>
+                    <h2 className="text-2xl ml-10 dark:text-white">Amit Kumar</h2>
                 </Link>
             </div>
             <div className="flex">
                 <Link 
-                    className={"mx-5 text-" + (isLinkActive1 ? "black" : "gray") + "-600"} 
+                    className= {"pt-1 mx-5 " + (isLinkActive1 ? "dark:text-blue-500 text-blue-500" : "dark:text-white text-gray-500")} 
                     to="/" 
                     onMouseOver={() => setIsLinkActive1(true)}
                     onMouseOut={() => setIsLinkActive1(false)}
@@ -28,7 +28,7 @@ const Links = ({darkMode, setDarkMode}) => {
                         Home
                 </Link>
                 <Link 
-                    className={"mx-5 text-" + (isLinkActive2 ? "black" : "gray") + "-600"} 
+                    className= {"pt-1 mx-5 " + (isLinkActive2 ? "dark:text-blue-500 text-blue-500" : "dark:text-white text-gray-500")}
                     to="/projects"
                     onMouseOver={() => setIsLinkActive2(true)}
                     onMouseOut={() => setIsLinkActive2(false)}
@@ -36,11 +36,9 @@ const Links = ({darkMode, setDarkMode}) => {
                         Projects
                 </Link> 
                 <button>
-                    <img 
-                        onClick={toggleDarkMode} 
-                        className="w-10 cursor-pointer" 
-                        src={darkMode ? "https://static.thenounproject.com/png/4157080-200.png": "https://static.thenounproject.com/png/4676033-200.png"}
-                        alt="mode"/>
+                    <div onClick={toggleDarkMode} className="ml-3 w-10 cursor-pointer">
+                        <i className={darkMode ? "fa-regular fa-moon text-white" : "fa-regular fa-lightbulb"}/> 
+                    </div>   
                 </button>
             </div>
         </div>
