@@ -1,10 +1,10 @@
 import Links from "./Links";
 
-const Navbar = () => {
+const Navbar = ({darkMode, setDarkMode}) => {
 
   return (
       <nav className="p-10 bg-green-100 font-semibold shadow-md">
-        <Links/>
+        <Links darkMode={darkMode} setDarkMode={setDarkMode}/>
       </nav>
   )
 }

@@ -30,8 +30,6 @@ export const appRouter = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={appRouter}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   </RouterProvider>
 )

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const ContactMe = ({label, mailto}) => {
     console.log(window.location.href);
     return (    

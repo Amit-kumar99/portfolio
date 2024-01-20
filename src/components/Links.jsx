@@ -1,17 +1,14 @@
 import { Link }from "react-router-dom";
 import { useState } from "react";
 
-const Links = () => {
+const Links = ({darkMode, setDarkMode}) => {
     const [isLinkActive1, setIsLinkActive1] = useState(false);
     const [isLinkActive2, setIsLinkActive2] = useState(false);
-    const [isLightMode, setIsLightMode] = useState(true);
 
-    // doesn't work
-    const handleModeChange = () => {
-        setIsLightMode(!isLightMode);
-        console.log(isLightMode);
-    }
-
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
+    
     return (
         <div className="flex justify-between">
             <div>
@@ -38,11 +35,13 @@ const Links = () => {
                     >
                         Projects
                 </Link> 
-                <img 
-                    onClick={() => handleModeChange} 
-                    className="w-10 cursor-pointer" 
-                    src={isLightMode ? "https://static.thenounproject.com/png/4676033-200.png" : "https://static.thenounproject.com/png/4157080-200.png"}
-                    alt="mode"/>
+                <button>
+                    <img 
+                        onClick={toggleDarkMode} 
+                        className="w-10 cursor-pointer" 
+                        src={darkMode ? "https://static.thenounproject.com/png/4157080-200.png": "https://static.thenounproject.com/png/4676033-200.png"}
+                        alt="mode"/>
+                </button>
             </div>
         </div>
     )
